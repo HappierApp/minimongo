@@ -480,9 +480,7 @@ def test_collection_class():
 
 def test_str():
     assert str(TestModel()) == 'TestModel({})'
-    assert str(TestModel({'foo': 'bar'})) == 'TestModel({\'foo\': \'bar\'})'
-
-    assert str(TestModel({'foo': 'bar'})) == 'TestModel({\'foo\': \'bar\'})'
+    assert str(TestModel({'foo': 'bar'})) == 'TestModel({u\'foo\': u\'bar\'})'
 
 
 def test_auto_collection_name():

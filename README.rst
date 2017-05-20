@@ -28,10 +28,12 @@ you can use ``easy_install -U minimongo``. Otherwise, you can download the
 source from `GitHub <http://github.com/slacy/minimongo>`_ and run ``python
 setup.py install``.
 
+Instead of installing as above, you should use `pip install -e .`.
+
 
 Dependencies
 ============
-- pymongo_ 1.9+
+- pymongo_ 2.8+
 - `sphinx <http://sphinx.pocoo.org>`_ (optional -- for documentation generation)
 
 
