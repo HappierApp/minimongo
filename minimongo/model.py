@@ -228,6 +228,7 @@ class Model(AttrDict):
 
     def save(self, *args, **kwargs):
         """Save this object to it's mongo collection."""
+        kwargs.pop('safe', None)
         self.collection.save(self, *args, **kwargs)
         return self
 

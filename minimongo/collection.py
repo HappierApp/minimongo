@@ -8,6 +8,7 @@ class Cursor(PyMongoCursor):
 
     def __init__(self, *args, **kwargs):
         self._wrapper_class = kwargs.pop('wrap')
+        kwargs['projection'] = kwargs.pop('fields', None)
         super(Cursor, self).__init__(*args, **kwargs)
 
     def next(self):
